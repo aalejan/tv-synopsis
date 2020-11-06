@@ -4,16 +4,17 @@ html
         h1 Kim's Convenience
         h2 Developed By
             ul
-                each developer in kimC.developers
+                each developer in showdata.developedBy
                     li= developer
         h2 Satrring
-            ul
-                each star in kimC.starring
-                    li= star
+        ul
+            each star in showdata.starring
+                li= star
         h2 Seasons
-            ul
-                each season in kimC.seasons
-                    li= season
+        ul
+            for season in showdata.seasons
+                li
+                    a(href = `season/${season.number}`)= `Season ${season.number}`
                 
 
                 
