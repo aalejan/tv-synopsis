@@ -1,7 +1,21 @@
 html
-    head
-        body
+    
+    body
         h1= show
         h3= `Season ${season.number}`
+            table
+                tr
+                    th No.
+                    th Title
+                    th Director
+                for episode in season.episodes
+                    tr
+                        td= episode.number
+                        td= episode.title
+                        td= episode.director
+                    tr
+                        td(colspan= 3)= episode.synopsis
+                        
+                
         
                 

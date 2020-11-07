@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const showdata = require('./showdata')
 
+app.use(express.static('public'))
+
 app.set('view engine', 'pug')
 
 app.get('/', (req, res) => {
@@ -18,5 +20,6 @@ app.all('*', (req, res) => {
   return res.sendStatus(404)
 })
 app.listen(5000)
+// eslint-disable-next-line no-console
 console.log('Listening to Port 5000')
 
