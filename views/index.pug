@@ -1,19 +1,19 @@
 html
     include partials/head.pug
-    body
+    body(class = "mainB")
         h1 Kim's Convenience
         h2 Developed By
             ul
                 each developer in showdata.developedBy
-                    li= developer
+                    li(class = 'dev')= developer
         h2 Satrring
         ul
             each star in showdata.starring
-                li= star
+                li(class = 'dev')= star
         h2 Seasons
         ul
             for season in showdata.seasons
-                li
+                li(class = 'dev')
                     a(href = `season/${season.number}`)= `Season ${season.number}`
                 
 

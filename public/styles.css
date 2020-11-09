@@ -1,10 +1,43 @@
-td {
-  border: 1px solid black;
-}
+table,
+td,
 th {
-  background-color: aqua;
+  border: 2.5px solid black;
+  border-collapse: collapse;
 }
 
-.season {
+table {
+  margin: 0 65px;
+}
+
+div {
   text-align: center;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+th {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px 0px;
+  font-size: 20px;
+}
+td {
+  padding: 5px 0px;
+}
+.main {
+  padding-left: 25px;
+}
+.number {
+  width: 4%;
+  text-align: center;
+}
+.syn {
+  padding-left: 10px;
+}
+.dev {
+  font-size: medium;
+}
+
+.mainB {
+  padding-left: 30px;
 }
